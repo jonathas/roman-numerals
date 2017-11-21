@@ -1,7 +1,13 @@
 class Converter {
 
+    romanToNumeric(req, res) {
 
+    }
+
+    numericToRoman(req, res) {
+
+    }
 
 }
 
-module.exports = Converter;
+module.exports = new Converter();

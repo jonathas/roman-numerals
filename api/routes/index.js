@@ -1,7 +1,7 @@
 module.exports = (app) => {
 
     // Require here the routes files
-    // require('./converter')(app);
+    require('./converter')(app);
 
     app.get('/', (req, res) => res.status(200).json({ message: 'Welcome to the Roman Numerals API. Check the documentation for the list of available endpoints' }));
 
