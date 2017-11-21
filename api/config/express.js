@@ -1,12 +1,13 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const dotenv = require('dotenv').config();
+const express = require('express');
+const bodyParser = require('body-parser');
 
 module.exports = () => {
     let app = express();
 
     app.use(bodyParser.json());
 
-    require("../routes")(app);
+    require('../routes')(app);
 
     return app;
 }

@@ -6,10 +6,16 @@
     "license": "GPL-3.0",
     "author": "Jon Ribeiro <contact@jonathas.com>",
     "scripts": {
+        "test": "istanbul cover --report cobertura --report lcov node_modules/mocha/bin/_mocha",
         "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jonathas/roman-numerals.git"
     },
     "dependencies": {
         "body-parser": "^1.18.2",
+        "dotenv": "^4.0.0",
         "express": "^4.16.2"
     },
     "devDependencies": {
