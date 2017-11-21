@@ -23,6 +23,7 @@
         "apidoc": "^0.17.6",
         "chai": "3.5.0",
         "istanbul": "1.0.0-alpha.2",
-        "mocha": "3.0.2"
+        "mocha": "3.0.2",
+        "supertest": "^3.0.0"
     }
 }

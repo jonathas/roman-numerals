@@ -18,7 +18,7 @@ module.exports = (app) => {
      *   .success((res, status) => doSomethingHere())
      *   .error((err, status) => doSomethingHere());
      *
-     * @apiSuccess {Number} result The convertion result
+     * @apiSuccess {Number} result The conversion result
      *
      * @apiSuccessExample {json} Success response:
      *     HTTPS 200 OK
@@ -43,7 +43,7 @@ module.exports = (app) => {
      *   .success((res, status) => doSomethingHere())
      *   .error((err, status) => doSomethingHere());
      *
-     * @apiSuccess {String} result The convertion result
+     * @apiSuccess {String} result The conversion result
      *
      * @apiSuccessExample {json} Success response:
      *     HTTPS 200 OK
