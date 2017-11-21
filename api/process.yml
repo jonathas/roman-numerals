@@ -1,13 +1,9 @@
 apps:
-  - script   : bin/server.js
-    name     : ui
+  - script   : server.js
+    name     : romnum_api
     instances: 2
     exec_mode: cluster
     env:
      NODE_ENV: test
     env_production:
      NODE_ENV: production
-  - script   : bin/socket.js
-    name     : socket
-    instances: 1
-    exec_mode: fork
