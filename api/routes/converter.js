@@ -1,4 +1,6 @@
-const Converter = require('../controllers/converter');
+const { check } = require('express-validator/check');
+const RomanNumeric = require('../helpers/romannumeric');
+const Converter = require('../controllers/converter').default;
 
 module.exports = (app) => {
 
@@ -27,7 +29,9 @@ module.exports = (app) => {
      *      }
      *
      */
-    app.get(endpoint + '/tonumeric/:value', Converter.romanToNumeric);
+    app.get(endpoint + '/tonumeric/:value', [
+        check('value').isAlpha()
+    ], Converter.romanToNumeric);
 
     /**
      * @api {get} /api/v1/converter/toroman/:value Returns the number in roman format
@@ -52,6 +56,8 @@ module.exports = (app) => {
      *      }
      *
      */
-    app.get(endpoint + '/toroman/:value', Converter.numericToRoman);
+    app.get(endpoint + '/toroman/:value', [
+        check('value').isNumeric()
+    ], Converter.numericToRoman);
 
 }
