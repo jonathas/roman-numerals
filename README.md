@@ -14,6 +14,14 @@
 - Docker
 - docker-compose
 
+### Before anything
+
+Install the packages by entering the api directory and running:
+
+```bash
+yarn
+```
+
 ### Testing the API
 
 In order to run the tests, enter the api directory and run:
@@ -47,3 +55,7 @@ In order to run it in production, instead of running the docker-dev.yml file, yo
 ```bash
 docker-compose up
 ```
+
+### TODO
+
+- Develop the frontend
