@@ -3,7 +3,7 @@
     "description": "An API that converts numbers to roman numerals and vice-versa",
     "version": "1.0.0",
     "main": "server.js",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "author": "Jon Ribeiro <contact@jonathas.com>",
     "scripts": {
         "test": "istanbul cover --report cobertura --report lcov node_modules/mocha/bin/_mocha",
