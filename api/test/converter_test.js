@@ -119,7 +119,7 @@ describe('# Converter', () => {
                         .set('Accept', 'application/json')
                         .expect('Content-Type', /json/)
                         .expect(res => res.body.error.should.equal('Please inform a value between 1 and 3999'))
-                        .expect(400)
+                        .expect(400);
                 });
         });
 
