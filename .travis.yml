@@ -1,0 +1,6 @@
+before_script: cd api && npm install
+language: node_js
+node_js:
+        - "7"
+after_script:
+- "bash ./coveralls.sh"

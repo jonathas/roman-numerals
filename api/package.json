@@ -6,7 +6,7 @@
     "license": "MIT",
     "author": "Jon Ribeiro <contact@jonathas.com>",
     "scripts": {
-        "test": "istanbul cover --report cobertura --report lcov node_modules/mocha/bin/_mocha",
+        "test": "istanbul cover node_modules/mocha/bin/_mocha",
         "start": "nodemon server.js",
         "docs": "apidoc -i routes/ -o ../docs/apidoc"
     },
@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "body-parser": "^1.18.2",
+        "coveralls": "2.13.1",
         "dotenv": "^4.0.0",
         "express": "^4.16.2",
         "express-validator": "^4.3.0"
