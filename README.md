@@ -38,6 +38,8 @@ In order to generate the HTML with the documentation, enter the api directory an
 npm run docs
 ```
 
+After that, it will be available inside docs/apidoc
+
 ### Developing
 
 For developing new functionalities, you can use nodemon, pm2 or the pm2 docker image for development. If you choose the docker image, then enter the infra directory and run:
