@@ -1,0 +1,50 @@
+<div class="page-header" id="banner">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Roman Numerals</h1>
+            <p class="lead">Convert numbers to roman numerals and vice versa</p>
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="box">
+        <form name="toRomanForm" ng-submit="toRoman(toRomanForm)">
+            <fieldset>
+                <legend>Number to Roman Numerals</legend>
+                <div class="form-group">
+                    <input class="form-control convert" type="number" min="1" max="3999" placeholder="Numeric value" ng-model="values.numeric" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Convert</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="box">
+        <form name="toNumericForm" ng-submit="toNumeric(toNumericForm)">
+            <fieldset>
+                <legend>Roman Numerals to Numeric</legend>
+                <div class="form-group">
+                    <input class="form-control convert" type="text" placeholder="Roman numerals" ng-model="values.roman" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Convert</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="card border-light" ng-show="result">
+    <div class="card-body">
+        <blockquote class="card-blockquote">
+            <p class="result">
+                <strong>Result:</strong>
+                <span>{{result}}</span>
+            </p>
+        </blockquote>
+    </div>
+</div>
+
+<div class="alert alert-dismissible alert-danger" ng-show="errorMsg">
+    <button type="button" class="close" ng-click="clearError()">&times;</button>
+    <h4>{{errorMsg.message}}</h4>
+    <p>{{errorMsg.error}}</p>
+</div>
