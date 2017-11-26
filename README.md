@@ -6,10 +6,13 @@
 
 ![alt text](https://github.com/jonathas/roman-numerals/blob/master/roman_numerals.jpg "Roman Numerals Clock")
 
+### Technologies used
+
+Node.js, Express, AngularJS, pm2, Docker, Nginx, apiDoc, mocha, istanbul.
+
 ### Dependencies
 
 - Node.js 7
-- npm
 - yarn
 - Docker
 - docker-compose
@@ -22,20 +25,22 @@ Install the packages by entering the api directory and running:
 yarn
 ```
 
-### Testing the API
+### Testing the API and checking the code coverage
 
 In order to run the tests, enter the api directory and run:
 
 ```bash
-npm test
+yarn test
 ```
+
+After that, you can open api/coverage/lcov-report/index.html on your browser to check the code coverage result.
 
 ### Generating the documentation for the endpoints
 
 In order to generate the HTML with the documentation, enter the api directory and run:
 
 ```bash
-npm run docs
+yarn docs
 ```
 
 After that, it will be available inside docs/apidoc
@@ -57,3 +62,12 @@ In order to run it in production, instead of running the docker-dev.yml file, yo
 ```bash
 docker-compose up
 ```
+
+### Running the web interface
+
+After starting the API following the previous steps, just open http://localhost on your browser.
+
+## Further improvements
+
+- Minification
+- E2E and unit tests
