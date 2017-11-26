@@ -57,7 +57,3 @@ In order to run it in production, instead of running the docker-dev.yml file, yo
 ```bash
 docker-compose up
 ```
-
-### TODO
-
-- Develop the frontend
