@@ -1,6 +1,6 @@
 # Roman Numerals
 
-## A web based application that converts numbers to roman numerals and vice-versa
+## A web based application that converts numbers to roman numerals and vice versa
 
 [![Build Status](https://travis-ci.org/jonathas/roman-numerals.svg?branch=master)](https://travis-ci.org/jonathas/roman-numerals) [![Coverage Status](https://coveralls.io/repos/github/jonathas/roman-numerals/badge.svg?branch=master)](https://coveralls.io/github/jonathas/roman-numerals?branch=master)
 
